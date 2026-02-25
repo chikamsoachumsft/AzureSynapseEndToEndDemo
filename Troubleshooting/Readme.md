@@ -14,7 +14,7 @@ After you deploy the solution and open Synapse Studio, you notice that there are
 
 
 # Resolution - Missing Pipelines or Data
-Not all artifacts can be deployed if you don't have Synapse registered in your GitHub account.  You need to disconnect and reconnect GitHub from your Synapse workspace to force registration.  Once that is complete you will need to redploy the solution.
+Not all artifacts can be deployed if you don't have Synapse registered in your GitHub account.  You need to disconnect and reconnect GitHub from your Synapse workspace to force registration.  Once that is complete you will need to redeploy the solution.
 
 First you need to switch from Synapse Live mode to GitHub.
 ![image](https://user-images.githubusercontent.com/59613090/233480998-b4cb25aa-9973-43ca-8884-2e41887dd49f.png)

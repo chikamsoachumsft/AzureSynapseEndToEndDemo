@@ -19,7 +19,7 @@
 
 
 # STEP 1: Parameter Setup
-Prior to running the observations pipeline (FHIR_Pipeline4Observation_Spark_OC) you will need to set the pipeline parameters to use the artifact names you chose during deployment.  Go to the integrate hub, expand the obsevation folder, and select the pipeline to open it.
+Prior to running the observations pipeline (FHIR_Pipeline4Observation_Spark_OC) you will need to set the pipeline parameters to use the artifact names you chose during deployment.  Go to the integrate hub, expand the observation folder, and select the pipeline to open it.
 
 ![image](https://user-images.githubusercontent.com/59613090/193133194-68a05a70-e2c7-43b9-81fa-393b2050b231.png)
 
@@ -110,12 +110,12 @@ Change the default value for each of the following five parameters to what you c
     * Click on the carot on top right-hand corner to open the *Command viewer*. Here you can view the KQL code that is running in the background, such as the Create Table Command. This command is creating the table with all of the data types where the data will be stored: *ObservationCurated*.
     
 8.  Select **Next: Start Ingestion** and this will begin the ingestion process for the data. It is complete once all the files display a green checkmark. This should take approximately 10 minutes. Click **Close** to complete.
-   * Note: You can also ingest the data using the pipeline named: *ObservationsData_ToSDXPool** which uses a COPY activity to bring the data into ADX. However, you must manually create a table in your ADX database prior to copying the data. Under KQL scripts you can find the *Observation Table Creation* script to create the table.  After the table has been successfully created with the correct data types for the columns you can run the piepeline with your respective parameters.
+   * Note: You can also ingest the data using the pipeline named: *ObservationsData_ToSDXPool** which uses a COPY activity to bring the data into ADX. However, you must manually create a table in your ADX database prior to copying the data. Under KQL scripts you can find the *Observation Table Creation* script to create the table.  After the table has been successfully created with the correct data types for the columns you can run the pipeline with your respective parameters.
 
 ![Ingesting Data](https://github.com/nataliarodri906/AzureSynapseEndToEndDemo/blob/7dd6b66ab99ce0b5aed9feb2b0aa43811dccb5f5/Images/IngestingGif.gif)  
 
 # STEP 4: Analyze & Visualize Data using KQL
-1. In Synpase studio, on the left-side pane, select **Develop**. 
+1. In Synapse studio, on the left-side pane, select **Develop**. 
 2. Under 'Notebooks' dropdown on the left side of the screen, click on the KQL notebook named **'Observations Analytics w KQL'**.  
 3. Once in the notebook, ensure you are connected to your ADX pool **'adxpoolmedicaldata'** and database **'ObservationData'** and then run each of the sections (a-i) of the script separately and observe the results:
    
